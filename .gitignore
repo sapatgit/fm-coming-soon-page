@@ -16,3 +16,5 @@
 
 # Avoid node modules upload
 node_modules/
+.cache/
+dist/

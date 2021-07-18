@@ -1,0 +1,32 @@
+{
+  "name": "fm-coming-soon-page",
+  "version": "1.0.0",
+  "description": "fm challenge coming soon page",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapatgit/fm-coming-soon-page.git"
+  },
+  "keywords": [
+    "coming",
+    "soon",
+    "ping"
+  ],
+  "author": "Saptarshi Majumdar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sapatgit/fm-coming-soon-page/issues"
+  },
+  "homepage": "https://github.com/sapatgit/fm-coming-soon-page#readme"
+}

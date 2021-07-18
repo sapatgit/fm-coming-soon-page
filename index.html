@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="logo">
+        <img src="./images/logo.svg" alt="Logo" class="logo__img" />
+      </h1>
+      <h2 class="launching">
+        <span>
+          We are launching <span class="launching__highlight">soon!</span>
+        </span>
+      </h2>
 
-  We are launching soon!
+      <div class="subscription">
+        <span class="subscription__text">Subscribe and get notified</span>
+      </div>
 
-  Subscribe and get notified
+      <form class="subscription-form">
+        <input
+          class="subscription-form__email-input"
+          type="email"
+          name="email"
+          placeholder="Your email address..."
+          required
+        />
+        <button class="subscription-form__submit-btn" type="submit">
+          Notify Me
+        </button>
+      </form>
 
-  Notify Me
+      <div class="jumbotron">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="decorative-image"
+          class="jumbotron__image"
+        />
+      </div>
+    </main>
 
-  &copy; Copyright Ping. All rights reserved.
+    <footer>
+      <div class="social-links">
+        <span class="social-links__icon">
+          <i class="fab fa-facebook-f"></i>
+        </span>
+        <span class="social-links__icon">
+          <i class="fab fa-twitter"></i>
+        </span>
+        <span class="social-links__icon">
+          <i class="fab fa-instagram"></i>
+        </span>
+      </div>
+      <span class="copyright">&copy; Copyright Ping. All rights reserved.</span>
+    </footer>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/brands.min.js"
+    ></script>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"
+    ></script>
+  </body>
 </html>
