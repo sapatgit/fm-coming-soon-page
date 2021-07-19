@@ -96,11 +96,12 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  margin-bottom: 20px;
 }
 .jumbotron__image {
   width: calc(100vw - 40px);
+  max-width: 560px;
 }
-
 footer {
   position: relative;
   bottom: 0;
@@ -132,9 +133,6 @@ footer {
 }
 
 @media screen and (min-width: 500px) {
-  .jumbotron__image {
-    max-width: 560px;
-  }
   .subscription-form {
     flex-direction: row;
     justify-content: space-between;
