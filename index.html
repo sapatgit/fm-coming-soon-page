@@ -36,15 +36,21 @@
         <span class="subscription__text">Subscribe and get notified</span>
       </div>
 
-      <form class="subscription-form">
+      <form class="subscription-form" id="subscription-form">
         <input
           class="subscription-form__email-input"
+          id="email"
           type="email"
           name="email"
           placeholder="Your email address..."
           required
         />
-        <button class="subscription-form__submit-btn" type="submit">
+        <span id="email-error" class="subscription-form__email-input__error"></span>
+        <button
+          class="subscription-form__submit-btn"
+          type="submit"
+          onclick="checkEmailValidity()"
+        >
           Notify Me
         </button>
       </form>
@@ -81,5 +87,28 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js"
     ></script>
+    <script>
+      const form = document.getElementById("subscription-form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        checkEmailValidity();
+      });
+
+      const checkEmailValidity = () => {
+        const email = document.getElementById("email");
+        const emailError = document.getElementById("email-error");
+        if (!email.checkValidity()) {
+          email.classList.add("subscription-form__email-input--red-border");
+          if (email.value) {
+            emailError.textContent = "Please provide a valid email address";
+          } else {
+            emailError.textContent = "Whoops! It looks like you forgot to add your email";
+          }
+        } else {
+          email.classList.remove("subscription-form__email-input--red-border");
+          emailError.textContent= "";
+        }
+      };
+    </script>
   </body>
 </html>
