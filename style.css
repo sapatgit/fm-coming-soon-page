@@ -72,7 +72,7 @@ body {
   border: 2px solid hsl(354, 100%, 66%);
 }
 .subscription-form__email-input__error {
-  color:hsl(354, 100%, 66%);
+  color: hsl(354, 100%, 66%);
   font-style: italic;
   font-size: 0.9em;
   margin: 0 auto 20px auto;
@@ -133,7 +133,7 @@ footer {
 
 @media screen and (min-width: 500px) {
   .jumbotron__image {
-    max-width: 460px;
+    max-width: 560px;
   }
   .subscription-form {
     flex-direction: row;
@@ -148,5 +148,8 @@ footer {
   }
   .subscription-form__submit-btn {
     width: 35%;
+  }
+  .jumbotron {
+    margin-top: 15px;
   }
 }
