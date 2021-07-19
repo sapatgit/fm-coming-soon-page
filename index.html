@@ -37,15 +37,17 @@
       </div>
 
       <form class="subscription-form" id="subscription-form">
-        <input
-          class="subscription-form__email-input"
-          id="email"
-          type="email"
-          name="email"
-          placeholder="Your email address..."
-          required
-        />
-        <span id="email-error" class="subscription-form__email-input__error"></span>
+        <div class="subscription-form__email">
+          <input
+            class="subscription-form__email-input"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Your email address..."
+            required
+          />
+          <span id="email-error" class="subscription-form__email-input__error"></span>
+        </div>
         <button
           class="subscription-form__submit-btn"
           type="submit"
